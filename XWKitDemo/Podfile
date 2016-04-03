@@ -6,7 +6,7 @@
 target 'XWKitDemo' do
 pod 'SDWebImage'
 pod 'AFNetworking'
-pod 'MBProgressHUD', '~> 0.9.2'
+pod 'MBProgressHUD'
 pod 'Masonry'
 pod 'INSPullToRefresh'
 pod 'MJExtension'

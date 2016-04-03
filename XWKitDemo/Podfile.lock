@@ -26,7 +26,7 @@ DEPENDENCIES:
   - AFNetworking
   - INSPullToRefresh
   - Masonry
-  - MBProgressHUD (~> 0.9.2)
+  - MBProgressHUD
   - MJExtension
   - SDWebImage
 
@@ -38,6 +38,6 @@ SPEC CHECKSUMS:
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
-PODFILE CHECKSUM: a40406ba3c8bbc62a784560803defab03008b980
+PODFILE CHECKSUM: bc0ac7e8da2bfad92895acc5a09e1ddb68c35aa0
 
 COCOAPODS: 1.0.0.beta.6
