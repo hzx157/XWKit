@@ -27,7 +27,10 @@
     [self.tableView xw_addPullToRefreshWithHandler:^(UIScrollView *scrollView) {
         [weakSelf.dataArray removeAllObjects];
         [weakSelf test];
-        [scrollView xw_endPullToRefresh];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [scrollView xw_endPullToRefresh];
+        });
+        
     }];
     
     
