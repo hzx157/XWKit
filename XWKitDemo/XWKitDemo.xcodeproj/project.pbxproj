@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E46894A1CB38FCD00817E27 /* 2222.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E4689491CB38FCC00817E27 /* 2222.png */; };
 		58E9C1D61CAFA20A00E6A76F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1D51CAFA20A00E6A76F /* main.m */; };
 		58E9C1D91CAFA20A00E6A76F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1D81CAFA20A00E6A76F /* AppDelegate.m */; };
 		58E9C1DC1CAFA20A00E6A76F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1DB1CAFA20A00E6A76F /* ViewController.m */; };
@@ -261,6 +262,7 @@
 
 /* Begin PBXFileReference section */
 		2130FF694259CE72E0EF8296 /* Pods-XWKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWKitDemo/Pods-XWKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4E4689491CB38FCC00817E27 /* 2222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2222.png; sourceTree = "<group>"; };
 		57B4972682AC4BB98A3B974F /* Pods-XWKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWKitDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWKitDemoUITests/Pods-XWKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E9C1D11CAFA20A00E6A76F /* XWKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E9C1D51CAFA20A00E6A76F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -794,6 +796,7 @@
 				58E9C4DD1CAFA4C300E6A76F /* RequstViewController.h */,
 				58E9C4DE1CAFA4C300E6A76F /* RequstViewController.m */,
 				58E9C1DD1CAFA20A00E6A76F /* Main.storyboard */,
+				4E4689491CB38FCC00817E27 /* 2222.png */,
 				58E9C1E01CAFA20A00E6A76F /* Assets.xcassets */,
 				58E9C1E21CAFA20A00E6A76F /* LaunchScreen.storyboard */,
 				58E9C1E51CAFA20A00E6A76F /* Info.plist */,
@@ -1931,6 +1934,7 @@
 			files = (
 				58E9C1E41CAFA20A00E6A76F /* LaunchScreen.storyboard in Resources */,
 				58E9C4101CAFA21800E6A76F /* NSDateTimeAgo.bundle in Resources */,
+				4E46894A1CB38FCD00817E27 /* 2222.png in Resources */,
 				58E9C1E11CAFA20A00E6A76F /* Assets.xcassets in Resources */,
 				58E9C1DF1CAFA20A00E6A76F /* Main.storyboard in Resources */,
 			);

@@ -10,11 +10,11 @@
 
 
 #import "APIRequestClient.h"
-
+#import <MJExtension/MJExtension.h>
 @implementation APIRequestClient
-
+#define  BUSINESS_URL  @"http://112.124.101.198:8080/App/"
 +(NSString *)baseUrl{
-  return @"";
+  return BUSINESS_URL;
 }
 +(instancetype)sharedClient{
 
@@ -32,6 +32,10 @@
     dispatch_once(&onceToken, ^{
         manager = [[AFHTTPSessionManager alloc]initWithBaseURL:[NSURL URLWithString:[self baseUrl]]];
         manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+        manager.requestSerializer = [AFJSONRequestSerializer serializer];
+        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        manager.requestSerializer.timeoutInterval = 20.0;
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     });
     return manager;
 }
@@ -42,8 +46,10 @@
            failure:(failureBlock)failure{
 
     AFHTTPSessionManager *manager = [APIRequestClient shareManager];
-   self.dataTask = [manager POST:@"" parameters:nil progress:uploadProgress success:^(NSURLSessionDataTask *  task, id  responseObject) {
-          success(task,responseObject,responseObject);
+   self.dataTask = [manager POST:urlString parameters:nil progress:uploadProgress success:^(NSURLSessionDataTask *  task, id  responseObject) {
+            
+          success(task,[responseObject mj_JSONObject],responseObject);
+       
     } failure:^(NSURLSessionDataTask *  task, NSError *  error) {
          failure(task,error,error);
     }];
@@ -69,6 +75,7 @@
     
 
 }
+/*
 -(void)uploadTaskWithUrlString:(NSString *)urlString
                     fromFile:(NSString *)fileURL
                     progress:(nullable void (^)(NSProgress *uploadProgress)) uploadProgressBlock
@@ -94,19 +101,26 @@
     [_dataTask resume];
 
 }
--(void)uploadTaskWithStreamedRequest{
-    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
+ */
+-(void)uploadTaskWithUrlString:(NSString *)urlString
+                      fromFile:(NSString *)fileURL
+                      progress:(nullable void (^)(NSProgress *uploadProgress)) uploadProgressBlock
+             completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject, NSError  * _Nullable error,id model))completionHandler{
+     NSURL *URL = [NSURL URLWithString:[[APIRequestClient baseUrl] stringByAppendingString:urlString]];
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:URL.absoluteString parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+       //   [formData appendPartWithFileData:data1 name:@"file" fileName:@"ios_huangzhenxiang.png" mimeType:@"image/png"];
+        [formData appendPartWithFileURL:[NSURL fileURLWithPath:fileURL] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
     } error:nil];
     
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+     AFHTTPSessionManager *manager = [APIRequestClient shareManager];
+  //  AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     
     NSURLSessionUploadTask *uploadTask;
     uploadTask = [manager
                   uploadTaskWithStreamedRequest:request
                   progress:^(NSProgress * _Nonnull uploadProgress) {
                       dispatch_async(dispatch_get_main_queue(), ^{
-
+ NSLog(@"Error: %@", uploadProgress);
                       //    [progressView setProgress:uploadProgress.fractionCompleted];
                       });
                   }
@@ -114,7 +128,7 @@
                       if (error) {
                           NSLog(@"Error: %@", error);
                       } else {
-                          NSLog(@"%@ %@", response, responseObject);
+                          NSLog(@"sueccs = %@", [responseObject mj_JSONObject]);
                       }
                   }];
     

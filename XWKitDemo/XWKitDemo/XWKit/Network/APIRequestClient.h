@@ -53,6 +53,6 @@ typedef void(^failureBlock)(NSURLSessionDataTask *task, NSError *error,id  respo
              completionHandler:( void (^)(NSURLResponse *response, id  responseObject, NSError  *  error,id model))completionHandler;
 
 
--(void)uploadTaskWithStreamedRequest;
+//-(void)uploadTaskWithStreamedRequest;
 
 @end
