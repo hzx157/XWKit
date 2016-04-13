@@ -233,6 +233,7 @@
 		2130FF694259CE72E0EF8296 /* Pods-XWKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWKitDemo/Pods-XWKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E4689491CB38FCC00817E27 /* 2222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2222.png; sourceTree = "<group>"; };
 		57B4972682AC4BB98A3B974F /* Pods-XWKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWKitDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWKitDemoUITests/Pods-XWKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		58295B351CBEA09E0084D046 /* PublicMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicMacro.h; sourceTree = "<group>"; };
 		58E9C1D11CAFA20A00E6A76F /* XWKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E9C1D51CAFA20A00E6A76F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58E9C1D71CAFA20A00E6A76F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -668,6 +669,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58295B341CBEA0490084D046 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				58295B351CBEA09E0084D046 /* PublicMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 		58E9C1C81CAFA20A00E6A76F = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +750,7 @@
 		58E9C2071CAFA21800E6A76F /* XWKit */ = {
 			isa = PBXGroup;
 			children = (
+				58295B341CBEA0490084D046 /* Macro */,
 				58E9C2081CAFA21800E6A76F /* Categories */,
 				58E9C3FD1CAFA21800E6A76F /* Network */,
 				58E9C4001CAFA21800E6A76F /* XWKitMacro.h */,
