@@ -37,6 +37,11 @@
 #import "NSUserDefaults+SafeAccess.h"
 
 
+/****宏定义******/
+#import "PublicMacro.h"
+#import "XWCommon.h"
+
+
 #endif /* XWKitMacro_h */
 
 

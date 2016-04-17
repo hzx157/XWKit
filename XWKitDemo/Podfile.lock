@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CTAssetsPickerController (2.9.5)
   - INSPullToRefresh (1.1.5)
   - Masonry (1.0.0)
   - MBProgressHUD (0.9.2)
@@ -24,6 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CTAssetsPickerController
   - INSPullToRefresh
   - Masonry
   - MBProgressHUD
@@ -32,12 +34,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CTAssetsPickerController: b413fece2194ae3dbf22fbc544cf6f2a6d516a4d
   INSPullToRefresh: 112ae2c295d2b3a76daa9dff86e7ef40ed002c47
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
-PODFILE CHECKSUM: bc0ac7e8da2bfad92895acc5a09e1ddb68c35aa0
+PODFILE CHECKSUM: 6d12071b27dbe6a11c6a62c5ef67ad6571f7bee6
 
 COCOAPODS: 1.0.0.beta.6

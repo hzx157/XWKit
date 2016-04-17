@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E46894A1CB38FCD00817E27 /* 2222.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E4689491CB38FCC00817E27 /* 2222.png */; };
+		5827FCEF1CC376E80007D16B /* XWCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5827FCEE1CC376E80007D16B /* XWCommon.m */; };
+		5827FCF21CC3A3190007D16B /* XWChooseAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5827FCF11CC3A3190007D16B /* XWChooseAlbum.m */; };
 		58E9C1D61CAFA20A00E6A76F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1D51CAFA20A00E6A76F /* main.m */; };
 		58E9C1D91CAFA20A00E6A76F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1D81CAFA20A00E6A76F /* AppDelegate.m */; };
 		58E9C1DC1CAFA20A00E6A76F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1DB1CAFA20A00E6A76F /* ViewController.m */; };
@@ -233,6 +235,10 @@
 		2130FF694259CE72E0EF8296 /* Pods-XWKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWKitDemo/Pods-XWKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E4689491CB38FCC00817E27 /* 2222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2222.png; sourceTree = "<group>"; };
 		57B4972682AC4BB98A3B974F /* Pods-XWKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWKitDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWKitDemoUITests/Pods-XWKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5827FCED1CC376E80007D16B /* XWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCommon.h; sourceTree = "<group>"; };
+		5827FCEE1CC376E80007D16B /* XWCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCommon.m; sourceTree = "<group>"; };
+		5827FCF01CC3A3190007D16B /* XWChooseAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWChooseAlbum.h; sourceTree = "<group>"; };
+		5827FCF11CC3A3190007D16B /* XWChooseAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWChooseAlbum.m; sourceTree = "<group>"; };
 		58295B351CBEA09E0084D046 /* PublicMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicMacro.h; sourceTree = "<group>"; };
 		58E9C1D11CAFA20A00E6A76F /* XWKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E9C1D51CAFA20A00E6A76F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -669,6 +675,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5827FCEC1CC375300007D16B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5827FCED1CC376E80007D16B /* XWCommon.h */,
+				5827FCEE1CC376E80007D16B /* XWCommon.m */,
+				5827FCF01CC3A3190007D16B /* XWChooseAlbum.h */,
+				5827FCF11CC3A3190007D16B /* XWChooseAlbum.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		58295B341CBEA0490084D046 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,6 +767,7 @@
 		58E9C2071CAFA21800E6A76F /* XWKit */ = {
 			isa = PBXGroup;
 			children = (
+				5827FCEC1CC375300007D16B /* Classes */,
 				58295B341CBEA0490084D046 /* Macro */,
 				58E9C2081CAFA21800E6A76F /* Categories */,
 				58E9C3FD1CAFA21800E6A76F /* Network */,
@@ -1735,6 +1753,7 @@
 				TargetAttributes = {
 					58E9C1D01CAFA20A00E6A76F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2QNMSGZF88;
 					};
 					58E9C1E91CAFA20B00E6A76F = {
 						CreatedOnToolsVersion = 7.2;
@@ -2058,6 +2077,7 @@
 				58E9C4701CAFA21800E6A76F /* UIControl+ActionBlocks.m in Sources */,
 				58E9C1D61CAFA20A00E6A76F /* main.m in Sources */,
 				58E9C4911CAFA21900E6A76F /* UINavigationBar+CustomHeight.m in Sources */,
+				5827FCEF1CC376E80007D16B /* XWCommon.m in Sources */,
 				58E9C4C11CAFA21900E6A76F /* UIView+Screenshot.m in Sources */,
 				58E9C4C91CAFA21900E6A76F /* UIViewController+BlockSegue.m in Sources */,
 				58E9C4D21CAFA21900E6A76F /* UIWebView+Blocks.m in Sources */,
@@ -2086,6 +2106,7 @@
 				58E9C4251CAFA21800E6A76F /* NSObject+AddProperty.m in Sources */,
 				58E9C4491CAFA21800E6A76F /* NSURLConnection+SelfSigned.m in Sources */,
 				58E9C4381CAFA21800E6A76F /* NSString+Hash.m in Sources */,
+				5827FCF21CC3A3190007D16B /* XWChooseAlbum.m in Sources */,
 				58E9C4B91CAFA21900E6A76F /* UIView+FDCollapsibleConstraints.m in Sources */,
 				58E9C4551CAFA21800E6A76F /* CAShapeLayer+UIBezierPath.m in Sources */,
 				58E9C49B1CAFA21900E6A76F /* UIResponder+Chain.m in Sources */,
@@ -2206,7 +2227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2244,7 +2265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2257,10 +2278,40 @@
 			baseConfigurationReference = 2130FF694259CE72E0EF8296 /* Pods-XWKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhenxiang huang (2QNMSGZF88)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = XWKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"CTAssetsPickerController\"",
+					"-l\"INSPullToRefresh\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "90375390-6cf7-48ca-b888-bcfa4f4a270e";
@@ -2272,9 +2323,40 @@
 			baseConfigurationReference = 89D46AF49E6E059EAC246F23 /* Pods-XWKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = XWKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"CTAssetsPickerController\"",
+					"-l\"INSPullToRefresh\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "90375390-6cf7-48ca-b888-bcfa4f4a270e";
@@ -2287,6 +2369,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = XWKitDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2300,6 +2383,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = XWKitDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2312,6 +2396,7 @@
 			baseConfigurationReference = 57B4972682AC4BB98A3B974F /* Pods-XWKitDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XWKitDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2325,6 +2410,7 @@
 			baseConfigurationReference = B577BDAF749F8F4020822EBA /* Pods-XWKitDemoUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XWKitDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

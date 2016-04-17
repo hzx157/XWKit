@@ -9,6 +9,7 @@
 #ifndef PublicMacro_h
 #define PublicMacro_h
 
+#define AppShareAppDelegate (AppDelegate*)[[UIApplication sharedApplication]delegate]
 
 #define IPHPNE_HEIGHT      [[UIScreen mainScreen] bounds].size.height  /**-> 整屏高度 */
 #define IPHONE_WIDTH       [[UIScreen mainScreen] bounds].size.width   /**-> 整屏宽度 */
@@ -76,9 +77,9 @@
 
 // 自定义NSLog,在debug模式下打印，在release模式下取消一切NSLog
 #ifdef DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define DLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
-#define NSLog(FORMAT, ...) nil
+#define DLog(FORMAT, ...) nil
 #endif
 
 

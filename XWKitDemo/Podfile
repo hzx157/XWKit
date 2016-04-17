@@ -10,7 +10,7 @@ pod 'MBProgressHUD'
 pod 'Masonry'
 pod 'INSPullToRefresh'
 pod 'MJExtension'
-
+pod 'CTAssetsPickerController'
 end
 
 target 'XWKitDemoTests' do

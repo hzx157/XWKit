@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    NSLog(@"%d",xw_isValidateEmail(@"31ii@qq.com"));
     return YES;
 }
 
