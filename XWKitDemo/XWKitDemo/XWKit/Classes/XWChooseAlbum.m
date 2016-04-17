@@ -7,6 +7,7 @@
 //
 
 #import "XWChooseAlbum.h"
+#import <objc/runtime.h>
 #import "XWKitMacro.h"
 #import <Photos/Photos.h>
 #import <AssetsLibrary/AssetsLibrary.h>
@@ -19,11 +20,22 @@
 @property (nonatomic,copy)ChooseVideoAlbumBlock videoBlock;//视频
 
 
-
 @end
+static char XWChooseAlbumKey = '\0';
 @implementation XWChooseAlbum
 
++(XWChooseAlbum *)shareSinge{
 
+      XWChooseAlbum *__album =  objc_getAssociatedObject(self, &XWChooseAlbumKey);
+    if(!__album){
+        __album = [[XWChooseAlbum alloc]init];
+        __album.allowsEditing = NO;
+        __album.maximumNumberOfSelection = 1;
+         objc_setAssociatedObject(self, &XWChooseAlbumKey, __album, OBJC_ASSOCIATION_RETAIN);
+    }
+    return __album;
+    
+}
 //从相册选择
 -(void)localPhoto:(ChoosePhotoAlbumBlock)block{
     if(![self isOpen]){
@@ -150,7 +162,7 @@
             videoUrl = (NSURL*)[info objectForKey:UIImagePickerControllerMediaURL];
             videoPath = [videoUrl path];
             
-            UIImage *thumbnailImage = [XWCommon getVideoImage:videoPath];
+            UIImage *thumbnailImage = [XWCommon xw_getVideoImage:videoPath];
             UISaveVideoAtPathToSavedPhotosAlbum(videoPath, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
             self.videoBlock(thumbnailImage,videoPath);
             // [weakSelf didSendMessageWithVideoConverPhoto:thumbnailImage videoPath:videoPath];
@@ -233,11 +245,12 @@
             picker.delegate = self;
             
             // create options for fetching photo only
-            PHFetchOptions *fetchOptions = [PHFetchOptions new];
-            fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %d", self.mediaType];
+           // PHFetchOptions *fetchOptions = [PHFetchOptions new];
+           // fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %d", self.mediaType];
             
             // assign options
-            picker.assetsFetchOptions = fetchOptions;
+          //  picker.assetsFetchOptions = fetchOptions;
+         //   picker.defaultAssetCollection = PHAssetCollectionSubtypeSmartAlbumUserLibrary;
             
             // to present picker as a form sheet in iPad
             if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
@@ -264,5 +277,30 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
     
     self.jkBlock(assets);
+    
+}
+-(void)xxoo:(NSArray *)array{
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    // 同步获得图片, 只会返回1张图片
+    options.synchronous = YES;
+    
+    for (PHAsset *asset in array) {
+        
+        
+        if(asset.mediaType == PHAssetMediaTypeImage){
+            // 是否要原图
+            CGSize size =  CGSizeMake(asset.pixelWidth, asset.pixelHeight);
+            // 从asset中获得图片
+            [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+              //  [self addMessage:result];
+                NSLog(@"%@", info);
+            }];
+        }else{
+            [[PHImageManager defaultManager]requestAVAssetForVideo:asset options:nil resultHandler:^(AVAsset * _Nullable asset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info) {
+                NSLog(@"%@", info);
+               // [self addMessage:info[PHImageCancelledKey]];
+            }];
+        }
+    }
 }
 @end

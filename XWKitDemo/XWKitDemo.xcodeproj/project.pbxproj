@@ -18,7 +18,6 @@
 		58E9C1E41CAFA20A00E6A76F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E9C1E21CAFA20A00E6A76F /* LaunchScreen.storyboard */; };
 		58E9C1EF1CAFA20B00E6A76F /* XWKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1EE1CAFA20B00E6A76F /* XWKitDemoTests.m */; };
 		58E9C1FA1CAFA20B00E6A76F /* XWKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C1F91CAFA20B00E6A76F /* XWKitDemoUITests.m */; };
-		58E9C4011CAFA21800E6A76F /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C20C1CAFA21800E6A76F /* NSArray+Block.m */; };
 		58E9C4021CAFA21800E6A76F /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C20E1CAFA21800E6A76F /* NSArray+SafeAccess.m */; };
 		58E9C4031CAFA21800E6A76F /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C2111CAFA21800E6A76F /* NSBundle+AppIcon.m */; };
 		58E9C4041CAFA21800E6A76F /* NSData+APNSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C2141CAFA21800E6A76F /* NSData+APNSToken.m */; };
@@ -37,8 +36,6 @@
 		58E9C4111CAFA21800E6A76F /* NSDateFormatter+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C22F1CAFA21800E6A76F /* NSDateFormatter+Make.m */; };
 		58E9C4131CAFA21800E6A76F /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C2341CAFA21800E6A76F /* NSDictionary+JSONString.m */; };
 		58E9C4151CAFA21800E6A76F /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C2381CAFA21800E6A76F /* NSDictionary+SafeAccess.m */; };
-		58E9C4161CAFA21800E6A76F /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C23A1CAFA21800E6A76F /* NSDictionary+URL.m */; };
-		58E9C4171CAFA21800E6A76F /* NSDictionary+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C23C1CAFA21800E6A76F /* NSDictionary+XML.m */; };
 		58E9C41A1CAFA21800E6A76F /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C2451CAFA21800E6A76F /* NSFileManager+Paths.m */; };
 		58E9C41B1CAFA21800E6A76F /* NSHTTPCookieStorage+FreezeDry.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C2481CAFA21800E6A76F /* NSHTTPCookieStorage+FreezeDry.m */; };
 		58E9C41C1CAFA21800E6A76F /* NSIndexPath+Offset.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9C24B1CAFA21800E6A76F /* NSIndexPath+Offset.m */; };
@@ -256,8 +253,6 @@
 		58E9C1F51CAFA20B00E6A76F /* XWKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E9C1F91CAFA20B00E6A76F /* XWKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWKitDemoUITests.m; sourceTree = "<group>"; };
 		58E9C1FB1CAFA20B00E6A76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58E9C20B1CAFA21800E6A76F /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
-		58E9C20C1CAFA21800E6A76F /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
 		58E9C20D1CAFA21800E6A76F /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
 		58E9C20E1CAFA21800E6A76F /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
 		58E9C2101CAFA21800E6A76F /* NSBundle+AppIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AppIcon.h"; sourceTree = "<group>"; };
@@ -293,10 +288,6 @@
 		58E9C2341CAFA21800E6A76F /* NSDictionary+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONString.m"; sourceTree = "<group>"; };
 		58E9C2371CAFA21800E6A76F /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
 		58E9C2381CAFA21800E6A76F /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
-		58E9C2391CAFA21800E6A76F /* NSDictionary+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URL.h"; sourceTree = "<group>"; };
-		58E9C23A1CAFA21800E6A76F /* NSDictionary+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URL.m"; sourceTree = "<group>"; };
-		58E9C23B1CAFA21800E6A76F /* NSDictionary+XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XML.h"; sourceTree = "<group>"; };
-		58E9C23C1CAFA21800E6A76F /* NSDictionary+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XML.m"; sourceTree = "<group>"; };
 		58E9C2441CAFA21800E6A76F /* NSFileManager+Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Paths.h"; sourceTree = "<group>"; };
 		58E9C2451CAFA21800E6A76F /* NSFileManager+Paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Paths.m"; sourceTree = "<group>"; };
 		58E9C2471CAFA21800E6A76F /* NSHTTPCookieStorage+FreezeDry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+FreezeDry.h"; sourceTree = "<group>"; };
@@ -818,8 +809,6 @@
 		58E9C20A1CAFA21800E6A76F /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
-				58E9C20B1CAFA21800E6A76F /* NSArray+Block.h */,
-				58E9C20C1CAFA21800E6A76F /* NSArray+Block.m */,
 				58E9C20D1CAFA21800E6A76F /* NSArray+SafeAccess.h */,
 				58E9C20E1CAFA21800E6A76F /* NSArray+SafeAccess.m */,
 			);
@@ -890,10 +879,6 @@
 				58E9C2341CAFA21800E6A76F /* NSDictionary+JSONString.m */,
 				58E9C2371CAFA21800E6A76F /* NSDictionary+SafeAccess.h */,
 				58E9C2381CAFA21800E6A76F /* NSDictionary+SafeAccess.m */,
-				58E9C2391CAFA21800E6A76F /* NSDictionary+URL.h */,
-				58E9C23A1CAFA21800E6A76F /* NSDictionary+URL.m */,
-				58E9C23B1CAFA21800E6A76F /* NSDictionary+XML.h */,
-				58E9C23C1CAFA21800E6A76F /* NSDictionary+XML.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -1753,7 +1738,6 @@
 				TargetAttributes = {
 					58E9C1D01CAFA20A00E6A76F = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 2QNMSGZF88;
 					};
 					58E9C1E91CAFA20B00E6A76F = {
 						CreatedOnToolsVersion = 7.2;
@@ -1954,7 +1938,6 @@
 				58E9C4651CAFA21800E6A76F /* UIButton+Indicator.m in Sources */,
 				58E9C4361CAFA21800E6A76F /* NSString+Emoji.m in Sources */,
 				58E9C4AB1CAFA21900E6A76F /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
-				58E9C4011CAFA21800E6A76F /* NSArray+Block.m in Sources */,
 				58E9C4131CAFA21800E6A76F /* NSDictionary+JSONString.m in Sources */,
 				58E9C4B51CAFA21900E6A76F /* UIView+Constraints.m in Sources */,
 				58E9C4351CAFA21800E6A76F /* NSString+DictionaryValue.m in Sources */,
@@ -1966,7 +1949,6 @@
 				58E9C4341CAFA21800E6A76F /* NSString+Contains.m in Sources */,
 				58E9C4A61CAFA21900E6A76F /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				58E9C4D41CAFA21900E6A76F /* UIWebView+JS.m in Sources */,
-				58E9C4161CAFA21800E6A76F /* NSDictionary+URL.m in Sources */,
 				58E9C4AA1CAFA21900E6A76F /* UITableViewCell+NIB.m in Sources */,
 				58E9C4B61CAFA21900E6A76F /* UIView+CustomBorder.m in Sources */,
 				58E9C4521CAFA21800E6A76F /* CAAnimation+EasingEquations.m in Sources */,
@@ -2063,7 +2045,6 @@
 				58E9C4AE1CAFA21900E6A76F /* UITextField+Select.m in Sources */,
 				58E9C4B81CAFA21900E6A76F /* UIView+draggable.m in Sources */,
 				58E9C4D71CAFA21900E6A76F /* UIWebView+Style.m in Sources */,
-				58E9C4171CAFA21800E6A76F /* NSDictionary+XML.m in Sources */,
 				58E9C4971CAFA21900E6A76F /* UINavigationItem+Loading.m in Sources */,
 				58E9C45C1CAFA21800E6A76F /* UIBarButtonItem+Action.m in Sources */,
 				58E9C4C61CAFA21900E6A76F /* UIViewController+BackButtonHandler.m in Sources */,
@@ -2312,9 +2293,9 @@
 					"\"UIKit\"",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbbingtuan.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "90375390-6cf7-48ca-b888-bcfa4f4a270e";
+				PROVISIONING_PROFILE = "8163f084-e0e2-460a-b6a1-7de6563b8825";
 			};
 			name = Debug;
 		};
@@ -2357,9 +2338,9 @@
 					"\"UIKit\"",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HZX.XWKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbbingtuan.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "90375390-6cf7-48ca-b888-bcfa4f4a270e";
+				PROVISIONING_PROFILE = "8163f084-e0e2-460a-b6a1-7de6563b8825";
 			};
 			name = Release;
 		};
